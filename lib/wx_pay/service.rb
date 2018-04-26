@@ -147,7 +147,7 @@ module WxPay
       r
     end
 
-    REFUND_QUERY_REQUIRED_FIELDS = [:out_trade_no]
+    REFUND_QUERY_REQUIRED_FIELDS = [:out_refund_no]
     def self.refund_query(params, options = {})
       params = {
         appid: options.delete(:appid) || WxPay.appid,
